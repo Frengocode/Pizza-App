@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-DATABASE_URL = 'postgresql+asyncpg://postgres:python$_venv@localhost/PizzaApp'
+DATABASE_URL = 'postgresql+asyncpg://username:password@localhost/PizzaApp'
 
 
 engine = create_async_engine(DATABASE_URL)
