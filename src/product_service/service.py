@@ -30,7 +30,7 @@ class ProductService:
             raise HTTPException(
                 status_code=400, detail="File size must be greater than 10 bytes."
             )
-        product_photo.filename = f"{uuid.uuid4()}.mp4"
+        product_photo.filename = f"{uuid.uuid4()}.jpg"
 
         file_path = os.path.join(MEDIA_ROOT, product_photo.filename)
         with open(file_path, "wb") as f:
